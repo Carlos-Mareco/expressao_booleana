@@ -8,7 +8,7 @@ Use o compilador G++ integrante da [GCC](https://gcc.gnu.org/) (GNU Compiler Col
 Certifique-se de estar no repositório do programa.
 
 ```bash
-g++ -o program main.cpp
+g++ -o program expressao_booleana.cpp
 ```
 E para executar, ainda no mesmo repositório do programa, use :
 

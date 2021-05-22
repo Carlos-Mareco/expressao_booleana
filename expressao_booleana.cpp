@@ -1,3 +1,9 @@
+/*
+ * @file expressao_booleana.cpp
+ * @author Carlos Henrique Barreto Mareco
+ * @date 19 Mai 2021
+ * @brief Imprime a expressão booleana de acordo com a saída da tabela verdade em "input.txt"
+ */
 #include <iostream>
 #include <cmath> //Necessário para log2(n) e pow(2, n)
 #include <fstream> //Necessário para ler o arquivo de texto
