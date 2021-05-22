@@ -37,7 +37,7 @@ string lerSaida(string nomeArquivo){
 string expressaoBooleana(string saida, int n_entradas){
     int linhas = pow(2, n_entradas);
     string cadeia, expressao;
-    string variaveis = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //Variáveis disponíveis para cada entrada
+    string variaveis = "ABCDEF"; //Variáveis disponíveis para cada entrada
     bool sinalAnd = false;
     
     for(int i = 0; i < linhas; i++){
