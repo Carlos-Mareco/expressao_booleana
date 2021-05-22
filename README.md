@@ -1,6 +1,6 @@
 # Expressao booleana
 
-A partir das saídas de um circuito no arquivo [input.txt](./decimais.txt) é gerada uma expressão booleana em formato de mintermos.
+A partir das saídas de um circuito no arquivo [input.txt](./input.txt) é gerada uma expressão booleana em formato de mintermos.
 
 ## Compilação e execução
 
