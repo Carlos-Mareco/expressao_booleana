@@ -22,5 +22,9 @@ E para executar, ainda no mesmo repositório do programa, use :
 **Kernel do Linux:** 4.15.0-54-generic.  
 **Processador:** Intel© Core™ i7-7500U CPU @ 2.70GHz × 2.  
 **Memória:** 7.7 GiB.  
-**Editor/IDE:** [Visual Studio Code 1.54.2](https://code.visualstudio.com/).
+**Editor/IDE:** [Visual Studio Code 1.54.2](https://code.visualstudio.com/).                                     
 **Compilador:** G++ 7.4.0.
+
+## Licença
+
+Licenciado sob a [GNU General Public License](./LICENSE).
