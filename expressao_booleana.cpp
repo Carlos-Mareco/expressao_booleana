@@ -45,13 +45,13 @@ string expressaoBooleana(string saida, int n_entradas){
     int linhas = pow(2, n_entradas); //Gera 2^n linhas válidas, onde n é a quantidade de entradas
     string cadeia, expressao;
     string variaveis = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //Variáveis disponíveis para entradas
-    bool sinalAnd = false; //Sinalizador para adicionar o sinal +
+    bool sinalOr = false; //Sinalizador para adicionar o sinal +
     
     for(int i = 0; i < linhas; i++){
         if(saida[i] == '1'){
-            if(sinalAnd) //Não adiciona o sinal + no primeiro termo
+            if(sinalOr) //Não adiciona o sinal + no primeiro termo
                 expressao += " + ";
-            sinalAnd = true; //Adiciona o sinal antes do próximo termo
+            sinalOr = true; //Adiciona o sinal antes do próximo termo
             // O valor de i é um número que convertido em binário fornece os valores de cada entrada.
             // Exemplo: Se a saída for '1' quando i = 3 e a quant. de entradas for 3, então as entradas são 0, 1 e 1
             cadeia = convDecToBin(i, n_entradas); 
