@@ -17,8 +17,12 @@ string convDecToBin(int valor, int tam);
 int main(){
     string saida = lerSaida("input.txt"); //ler o arquivo de nome "input.txt" e retorna uma string
     int n_entradas = log2(saida.length()); // n = log2(x), onde x é a quant. de saídas e n é a quant. de entradas
-    string expressao = expressaoBooleana(saida, n_entradas); //Guarda a expressão booleana
+    string expressao; //Guarda a expressão booleana
     
+    if(n_entradas < 27)
+        expressao = expressaoBooleana(saida, n_entradas);
+    else
+        expressao = "ERRO: Quantidade de entradas excede o limite de variáveis!";
     cout << expressao << endl;
     return 0;
 }
@@ -31,7 +35,8 @@ string lerSaida(string nomeArquivo){
     if(arquivo.is_open()){
         while (!arquivo.eof()){
             arquivo >> aux;
-            cadeiaSaida += aux;
+            if(aux == "1" || aux == "0")
+                cadeiaSaida += aux;
         }
         arquivo.close();
     } else {
@@ -44,7 +49,7 @@ string lerSaida(string nomeArquivo){
 string expressaoBooleana(string saida, int n_entradas){
     int linhas = pow(2, n_entradas); //Gera 2^n linhas válidas, onde n é a quantidade de entradas
     string cadeia, expressao;
-    string variaveis = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //Variáveis disponíveis para entradas
+    char variaveis; //Variáveis disponíveis para entradas
     bool sinalOr = false; //Sinalizador para adicionar o sinal +
     
     for(int i = 0; i < linhas; i++){
@@ -58,7 +63,8 @@ string expressaoBooleana(string saida, int n_entradas){
             //Ler as entradas de cada variável de trás para frente, visto que os bits estão invertidos em 'cadeia'
             //Exemplo: Quando i = 4, n_entradas = 3, então cadeia será 001 ao invés de 100
             for(int j = n_entradas - 1; j >= 0; j--){
-                expressao += variaveis[n_entradas - j -1]; //Imprime uma variável de cada posição de 'variáveis'
+                variaveis = 65 + n_entradas - j -1;
+                expressao += variaveis; //Imprime uma variável de cada posição de 'variáveis'
                 if(cadeia[j] == '0') // Se a entrada for 0, então ele nega a variável da entrada
                     expressao += "'";
             }
