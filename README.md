@@ -5,12 +5,12 @@ A partir das saídas de um circuito no arquivo [input.txt](./input.txt) é gerad
 ## Compilação e execução
 
 Use o compilador G++ integrante da [GCC](https://gcc.gnu.org/) (GNU Compiler Collection).
-Certifique-se de estar no repositório do programa.
+Certifique-se de estar no diretório do programa.
 
 ```bash
 g++ -o program expressao_booleana.cpp
 ```
-E para executar, ainda no mesmo repositório do programa, use :
+E para executar, ainda no mesmo diretório do programa, use :
 
 ```bash
 ./program
