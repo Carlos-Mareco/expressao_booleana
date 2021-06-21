@@ -1,4 +1,4 @@
-# Expressao booleana
+# Expressao booleana (não simplificada)
 
 A partir das saídas de um circuito no arquivo [input.txt](./input.txt) é gerada uma expressão booleana em formato de mintermos.
 
