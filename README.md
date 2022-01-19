@@ -29,7 +29,7 @@ E para executar, ainda no mesmo diretório do programa, use :
 
 Licenciado sob a [GNU General Public License](./LICENSE).
 
-## Condirações finais
+## Considerações finais
 
 Este programa faz parte de um dos componentes avaliativos da disciplina de Eletrônica Digital I do Curso de Ciência da Computação da Universidade Federal do Amapá.
 
